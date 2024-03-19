@@ -52,8 +52,28 @@ const option3 = document.getElementById('option3');
 const ans = document.getElementById('answer');
     ans.textContent = randomques.answer;
 
-function showans() {
 
-    ans.style.display = "flex";
 
-}
+
+
+
+
+/*
+
+
+
+
+        function checkAnswer(optionIndex) {
+            const selectedOption = document.getElementById(`option${optionIndex + 1}`);
+            const correctOptionIndex = randomques.options.findIndex(option => option === randomques.answer);
+            const correctOption = document.getElementById(`option${correctOptionIndex + 1}`);
+            
+            if (optionIndex === correctOptionIndex) {
+                selectedOption.style.backgroundColor = "green";
+            } else {
+                selectedOption.style.backgroundColor = "red";
+                correctOption.style.backgroundColor = "green";
+            }
+        }
+*/
+      
