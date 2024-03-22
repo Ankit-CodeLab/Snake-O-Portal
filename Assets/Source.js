@@ -51,7 +51,7 @@ option3.style.backgroundColor = "";
 }
 
 function checkAnswer(optionIndex) {
-const correctsound = documen.getElementById('correctSound');
+const correctsound = document.getElementById('correctSound');
 const selectedOption = document.getElementById(`option${optionIndex + 1}`);
 const correctOptionIndex = currentQuestion.options.findIndex(option => option === currentQuestion.answer);
 const correctOption = document.getElementById(`option${correctOptionIndex + 1}`);
