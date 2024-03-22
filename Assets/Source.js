@@ -51,12 +51,14 @@ option3.style.backgroundColor = "";
 }
 
 function checkAnswer(optionIndex) {
+const correctsound = documen.getElementById('correctSound');
 const selectedOption = document.getElementById(`option${optionIndex + 1}`);
 const correctOptionIndex = currentQuestion.options.findIndex(option => option === currentQuestion.answer);
 const correctOption = document.getElementById(`option${correctOptionIndex + 1}`);
 
 if (optionIndex === correctOptionIndex) {
     selectedOption.style.backgroundColor = "#1ed31e";
+ correctsound.play();
 } else {
     selectedOption.style.backgroundColor = "red";
     correctOption.style.backgroundColor = "#1ed31e";
