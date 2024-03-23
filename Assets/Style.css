@@ -1,0 +1,160 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    width: 100%;
+    height: 90vh;
+    color: white;
+    cursor: none;
+
+}
+
+.bg {
+
+    background: url('bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    padding: 110px 0;
+    filter: blur(5px);
+
+}
+
+.Head {
+
+    width: 100%;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    position: absolute;
+    top: 130px;
+
+}
+
+.Quiz{
+
+    width: 100%;
+    font-size: 30px;
+
+}
+
+.Questions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    position: absolute;
+    top: 280px;
+}
+
+.Questions p {
+
+    border: 3px solid white;
+    border-radius: 50px;
+    padding: 5px 350px;
+    font-size: 35px;
+    background-color: #0000004f;
+    box-shadow: 0 0 10px rgba(5, 255, 234, 0.692);
+
+}
+
+.Options {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 360px;
+}
+
+.flex {
+
+    width: 55%;
+
+}
+
+#option1 {
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 5px 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0000004f;
+    box-shadow: 0 0 10px rgba(5, 255, 234, 0.692);
+}
+
+#option1:hover {
+
+    box-shadow: 0 0 10px rgba(255, 5, 5, 0.692);
+
+}
+
+#option2 {
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 5px 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0000004f;
+    box-shadow: 0 0 10px rgba(5, 255, 234, 0.692);
+}
+
+#option2:hover {
+
+    box-shadow: 0 0 10px rgba(255, 5, 5, 0.692);
+
+}
+
+#option3 {
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 5px 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0000004f;
+    box-shadow: 0 0 10px rgba(5, 255, 234, 0.692);
+}
+
+#option3:hover {
+
+    box-shadow: 0 0 10px rgba(255, 5, 5, 0.692);
+
+}
+
+.correctans {
+
+    width: 102%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.btn button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
