@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake O Portal</title>
+    <link rel="stylesheet" href="Assets/Style.css">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="Head">
+        <p>Snake O Portal</p>
+    </div>
+
+    <div class="Quiz">
+        <div class="Questions">
+            <p id="Question"></p>
+        </div>
+
+        <div class="Options">
+            <div class="flex">
+                <p id="option1" onclick="checkAnswer(0); stopTimeSound();"></p>
+                <p id="option2" onclick="checkAnswer(1); stopTimeSound();"></p>
+                <p id="option3" onclick="checkAnswer(2); stopTimeSound();"></p>
+            </div>
+        </div>
+
+        <div class="btn">
+            <button id="next" onclick="nextques(); setTimeout(() => { document.getElementById('timeSound').play() }, 5000);">--</button>
+        </div>
+    </div>
+
+    <div class="audio">
+
+        <audio id="correctSound" src="Assets/correct.mp3"></audio>
+        <audio id="wrongSound" src="Assets/wrong.mp3"></audio>
+        <audio id="nextSound" src="Assets/next.mp3"></audio>
+        <audio id="timeSound" src="Assets/time.mp3"></audio>
+
+    </div>
+
+
+    <script src="Assets/Source.js"></script>
+
+</body>
+
+</html>
